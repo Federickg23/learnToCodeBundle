@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <title>Index</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+    <fieldset>
+        <form action="" method="POST"> </form>
+        <legend>Select your form:</legend>
+            <label for="on">On:</label>
+            <input id="on" type="radio" name="On/Off" value="On">
+
+            <label for="off">Off:</label>
+            <input id="off" type="radio" name="On/Off" value="Off">
+            <label for="auto">Auto:</label>
+            <input id="auto" type="radio" name="On/Off" value="Off">
+
+            <!-- You can add an id to anything and use that for <label> -->
+            <p></p>
+            <!-- MUST HAVE THE SAME NAME FOR RADIO BUTTONS TO WORK -->
+            <legend>Select your method of Communication:</legend>
+            <p></p>
+            <label for="Gmail">Gmail:</label>
+            <input id="Gmail" type="checkbox" name="Gmail" value="yes">
+
+            <label for="hotmail">Hotmail:</label>
+            <input id="hotmail" type="checkbox" name="Hotmail" value="yes">
+
+            <label for="yahoo">Yahoo:</label>
+            <input id="yahoo" type="checkbox" name="Yahoo" value="yes">
+
+            <p></p>
+            <legend>Select your Country</legend>
+            <select name="country">
+                <option value="usa">USA</option>
+                <option value="rus">Russia</option>
+                <option value="fra">France</option>
+                <option value="eng">England</option>
+                <option value="pak">Pakistan</option>
+                <option value="can">Canada</option>
+                <option value="ind">India</option>
+                <option value="den">Denmark</option>
+                <option value="gal">Gallifrey</option>
+                <option value="wes">Westeros</option>
+            </select>
+
+            <p></p>
+            <legend>Insert message</legend>
+            <textarea name="Yourmessage"></textarea>
+            <p></p>
+            <input type="submit" value="Submit">
+            <!-- <input type="reset" value="Clear"> -->
+    </fieldset>
+</body>
+
+</html>

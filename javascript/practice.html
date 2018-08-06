@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+        <script type="text/javascript">
+            /*function printHelloWorld(){
+                alert("Hello There");
+            }*/
+            function printHelloWorld(){
+                var userInput = prompt("Please enter a number between 1 and 10");
+                var numbers = [];
+                //Var basically is any time of variable, it's "sotf" and doesn't really mean anything
+                var largeNumbers = [];
+                var lns = [];
+                if(userInput >=1 && userInput<= 10) {
+                    for(var i = 1; i<=userInput;i++){
+                        document.write("<br> "+i+". That message has been written <br>");
+                        numbers.push(i);
+                    }
+                }
+
+                else {
+                    //alert("You entered: " + userInput +". Please enter a number between 1 and 10 ");
+                    console.log("You entered: " + userInput +". Please enter a number between 1 and 10 ");
+
+                }
+                var x = 0;
+                for (var i = 0; i < numbers.length; i++) {
+                    if(numbers[i]>5){
+                        x++;
+                        largeNumbers.push(numbers[i]);
+                        lns[x] = largeNumbers.slice(i-1,i);
+                    }
+                }
+                printArray(numbers, "Number: ")
+                printArray(largeNumbers, "Large Numbers: ")
+            }
+
+            function printArray(array, name){
+                console.log("Printing array: "+name);
+                document.write("<br>Printing array: "+name);
+                console.log(array.length + " elements");
+                document.write(array.length + " elements");
+                for(var i=0;i<array.length;i++) {
+                    console.log(i + " : " + array[i]);
+                    document.write("<br>" + array[i]);
+                    console.log("Our rectangle has ")
+                    console.log("Gabriel leave me alone");
+                }
+             }
+
+            window.onload = printHelloWorld;
+        </script>
+
+    </head>
+
+
+    <body>
+        <h2>What does this page do?</h2>
+        <p>It has an alert when the page loads</p>
+    </body>
+</html>

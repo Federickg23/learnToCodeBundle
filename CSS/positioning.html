@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Positioning</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<style type="text/css">
+    h1{
+        font-size: 40px;
+        color: red;
+    }
+    p{
+        text-decoration: underline;
+
+        color: purple;
+        font-family:monospace;
+    }
+
+    .aqua{
+        background-color: #00FFFF;
+        width: 350px;
+        height: 100px;
+        position:static;
+    }
+    .lpurple{
+        background-color: #BCA9F5;
+        width: 200px;
+        height: 150px;
+    }
+
+</style>
+<body>
+    <!--Absolute means that it cannot be moved from where it is, relatives moves objects relative to eachother and you need z-index to tell the browser what is on top, fixed means it's on a fixed position on the screen regardless of scrolling, and static  means it just stays there but moves with the page when scrolling. -->
+    <div class="aqua">This is some text</div>
+    <div class="lpurple">This is some more text</div>
+    <div class="lpurple">This is some more text</div>
+    <div class="lpurple">This is some more text</div>
+    <div class="lpurple">This is some more text</div>
+    <div class="lpurple">This is some more text</div>
+    <div class="lpurple">This is some more text</div>
+
+
+    <h1>Google</h1>
+    <p>People use google as a search engine</p>
+
+    <p id="gmail">Gmail is my default account</p>
+    <p>Yahoo Gmail MSN and Nothing</p>
+
+</body>
+</html>

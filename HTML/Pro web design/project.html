@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <title>Project</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <form action="file:///Users/Federick/Desktop/Learn%20to%20Code%20Bundle/HTML/Pro%20web%20design/submit.html" method="post">
+
+            <label for="Username">Username:</label>
+            <input type = "text" name="Username" placeholder="Enter username">
+
+            <label for="mail">Email:</label>
+            <input id="mail" type="text" name="mail"  pattern="[a-zA-Z0-9]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}"
+            title="Please enter valid email address like example@email.com" placeholder="example@email.com">
+
+            <label for="phone">Phone number:</label>
+            <input id="phone" type="tel" name="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+            title="Please match the format ### ### ####">
+
+            <label for="country">Select your Country</label>
+            <select name="country">
+                <option value="usa">USA</option>
+                <option value="rus">Russia</option>
+                <option value="fra">France</option>
+                <option value="eng">England</option>
+                <option value="pak">Pakistan</option>
+                <option value="can">Canada</option>
+                <option value="ind">India</option>
+                <option value="den">Denmark</option>
+                <option value="gal">Gallifrey</option>
+                <option value="wes">Westeros</option>
+            </select>
+            <br>
+            <label for="date">Select arrival date:</label>
+            <input id="date "type="date" name="date" min="2000-01-01">
+            <br>
+            <label for="dat">Select departure date:</label>
+            <input id="dat" type="date" name="date" min="2000-01-01">
+            <br>
+            <label for="number">Number of Guests</label>
+            <input id="number" type="number" name="number" min="0" max="100">
+
+            <p><em>Do you require meals?</em></p>
+            <label for="yes">Yes:</label>
+            <input id="yes" type="radio" name="radio" value="yes" checked>
+            <!-- checked means it's automatically checked -->
+            <label for="no">No:</label>
+            <input id="no" type="radio" name="radio" value="no">
+            <p><em>Do you require a balcony?</em></p>
+            <label for="balc">Yes:</label>
+            <input id="balc" type="checkbox" name="balc" value="yes" >
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+</body>
+</html>

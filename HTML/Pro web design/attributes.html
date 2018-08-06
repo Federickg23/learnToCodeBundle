@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <title>Inputs</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <fieldset>
+        <form action="" method="get">
+            <!-- get takes what you inputted and puts it in the address bar, post
+            doesn't do that -->
+            <!-- action="" says what will happen after submit is pressed. if a
+            file path is in the "" it opens that file, so on, so forth-->
+            <legend>HTML 5 New Attributes</legend>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" placeholder="Name" autofocus required>
+            <!-- autofocus automatically activates that part of the page, required
+            means that you can't submit if this isn't filled in-->
+            <br>
+            <label for="yes">Yes:</label>
+            <input id="yes" type="radio" name="radio" value="yes" checked>
+            <!-- checked means it's automatically checked -->
+            <label for="no">No:</label>
+            <input id="no" type="radio" name="radio" value="no">
+            <br>
+            <label for="on">On:</label>
+            <input id="on" type="checkbox" name="check" value="on" checked>
+            <label for="off">Off:</label>
+            <input id="off" type="checkbox" name="check" value="off">
+            <br>
+
+            <label for="mail">Email us:</label>
+            <input id="mail" type="text" name="mail"  pattern="[a-zA-Z0-9]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,}"
+            title="Please enter valid email address like example@email.com" placeholder="example@email.com">
+            <!--[a-zA-Z]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z]{2,} explanation:
+                 ^this part means any letter from a-z or A-z, with a minimum of three.
+                            ^ this means there must be an @
+                                ^this part means any letter from a-z or A-z, with a minimum of three.
+                                        ^this means one dot, only one allowed
+                                                ^this part means any letter from a-z or A-z, with a minimum of two -->
+            <br>
+            <label for="phone">Phone:</label>
+            <input id="phone" type="tel" name="phone" pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+            title="Please match the format ### ### ####">
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+</body>
+</html>

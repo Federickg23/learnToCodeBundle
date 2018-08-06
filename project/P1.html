@@ -1,0 +1,135 @@
+<doctype !html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html; charset=uft-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Project 1</title>
+
+    </head>
+    <style type="text/css">
+        .fixedwidth{
+            width: 1045px;
+            margin: 0 auto;
+        }
+        body{
+            background: #5C5C5C;
+            margin: 0px;
+        }
+        section.action{
+            background-color: rgb(168,88,163);
+        }
+        section.animation{
+            background: rgb(251,171,44);
+        }
+        section.upcoming{
+            background: rgb(2,99,174);
+        }
+        section.info{
+            /*border-radius: 20px;*/
+            width: 300px;
+            max-height: 330px;
+            overflow: hidden;
+            position: relative;
+            float: left;
+            -webkit-transition:max-height 0.8s ease 0s;
+            -moz-transition:max-height 0.8s ease 0s;
+            -ms-transition:max-height 0.8s ease 0s;
+            -o-transition:max-height 0.8s ease 0s;
+            transition: max-height 0.8s ease 0s;
+            /*
+            learn about transitions on w3schools...
+            */
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
+        section.info:hover{
+            /*This only activates when you hover over the box*/
+            max-height: 10000px;
+        }
+        section.info:after{
+            content: " ";
+            background: url("/Users/Federick/Desktop/Learn to Code Bundle/project/hover.png") no-repeat right top;
+            width: 30px;
+            height: 40px;
+            position: absolute;
+            right: 0px;
+            top: 10px;
+        }
+        section.info:hover:after{
+            background-position: right bottom;
+        }
+        section.info img{
+            display: block;
+            margin: 0 auto 2em;
+            margin-left: 5px;
+        }
+        section.info h2{
+            /* h2 within a section that has the class info */
+            font-size: 1.6em;
+            font-weight: 200;
+            font-family: bitter, georgia, times, "Times New Roman", serif;
+            padding-left: .5em;
+            line-height: 40px;
+            background: url("/Users/Federick/Desktop/Learn to Code Bundle/project/pattern.png");
+            color: rgb(350,400,31);
+        }
+        section.info ul{
+            list-style: circle;
+            margin: 0 1.2em 1em;
+        }
+        section.info li{
+            font-size: .80em;
+            margin-bottom: .8em;
+        }
+        section.info .date{
+            font-weight: bold;
+            color: white;
+            display: block;
+
+        }
+        p{
+            padding: 10px;
+        }
+    </style>
+    <body>
+        <div class="fixedwidth">
+        <!--section is used to divide into logical sections, like div-->
+        <section class="action info">
+            <h2>Action movies</h2>
+            <img src="/Users/Federick/Desktop/Learn to Code Bundle/project/action.jpg" width="290" height="250" alt="Action movie">
+            <p> New York City policeman John McClane (Bruce Willis) is visiting his estranged wife (Bonnie Bedelia) and two daughters on Christmas Eve. He joins her at a holiday party in the headquarters of the Japanese-owned business she works for. But the festivities are interrupted by a group of terrorists who take over the exclusive high-rise, and everyone in it. Very soon McClane realizes that there's no one to save the hostages -- but him.</p>
+        </section>
+        <section class="animation info">
+            <h2>Animation movies</h2>
+
+            <img src="/Users/Federick/Desktop/Learn to Code Bundle/project/animation.jpg" width="290" height="250" alt="Animation movie">
+            <p>Twenty-thousand years ago, Earth is a wondrous, prehistoric world filled with great danger, not the least of which is the beginning of the Ice Age. To avoid a really bad frostbite, the planets majestic creatures - and a few small, slothful ones - begin migrating south . The story revolves around sub-zero heroes: a woolly mammoth, a saber-toothed tiger, a sloth and a prehistoric combination of a squirrel and rat, known as Scrat.
+            </p>
+        </section>
+        <section class="upcoming info">
+            <h2>Upcoming movies</h2>
+
+            <img src="/Users/Federick/Desktop/Learn to Code Bundle/project/upcoming.jpg" width="290" height="250" alt="Upcoming movie">
+            <ul>
+            <span class="date">3/01/2015</span>    <li>Toy Story</li>
+            <span class="date">3/12/2015 </span>   <li>Ice Age 1</li>
+            <span class="date">5/04/2015 </span>   <li>Ice Age 2</li>
+            <span class="date">8/09/2015 </span>   <li>Ice Age 3</li>
+            <span class="date">6/09/2015 </span>   <li>Die Hard</li>
+            <span class="date">7/03/2015 </span>   <li>Die Hard 4</li>
+            <span class="date">6/08/2015 </span>   <li>Mission Impossible</li>
+            <span class="date">7/06/2015 </span>   <li>Men in Black</li>
+            <span class="date">3/05/2015 </span>  <li>Fight Club</li>
+            <span class="date">6/05/2015 </span>   <li>American movie</li>
+            <span class="date">2/01/2015 </span>   <li>A-Team</li>
+            <span class="date">2/05/2015 </span>   <li>V for Vendetta</li>
+            </ul>
+            <p>The name "film" originates from the fact that photographic film (also called film stock) has historically been the medium for recording and displaying motion pictures. Many other terms exist for an individual motion-picture, including picture, picture show, moving picture, photoplay, and flick. The most common term in the United States is movie, while in Europe film is preferred. Common terms for the field in general include the big screen, the silver screen, the movies, and cinema; the last of these is commonly used, as an overarching term, in scholarly texts and critical essays. In early years, the word sheet was sometimes used instead of screen.</p>
+        </section>
+    </div>
+    </body>
+</html>
